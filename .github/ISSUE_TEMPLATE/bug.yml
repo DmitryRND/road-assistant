@@ -1,0 +1,28 @@
+name: Ошибка
+description: Сообщить о проблеме Road Assistant
+body:
+  - type: markdown
+    attributes:
+      value: 'Обращение публичное. Не публикуйте пароли, токены, код лицензии, идентификатор устройства и координаты.'
+  - type: input
+    id: vehicle
+    attributes:
+      label: Автомобиль и прошивка
+    validations:
+      required: true
+  - type: textarea
+    id: versions
+    attributes:
+      label: Версии компонентов и способ установки
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги, ожидаемый и фактический результат
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Обезличенный журнал или снимок экрана
